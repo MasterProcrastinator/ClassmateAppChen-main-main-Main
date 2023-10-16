@@ -13,7 +13,7 @@ class ViewController: UIViewController {
 
             Student(firstName: "Brenden", lastName: "Wydra", rating: Rating.peak_mid, situation: "cool dude"),
 
-            Student(firstName: "Noel", lastName: "Ortiz", rating: Rating.mid, situation: "probably selling drugs"),
+            Student(firstName: "Noel", lastName: "Ortiz", rating: Rating.below_mid, situation: "probably selling drugs"),
 
             Student(firstName: "Jake", lastName: "Kenefick", rating: Rating.mid, situation: "being a fake life guard"),
 
