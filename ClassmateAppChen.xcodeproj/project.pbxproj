@@ -19,6 +19,7 @@
 		BF6030292AD6E56A003F86AC /* ClassmateAppChenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6030282AD6E56A003F86AC /* ClassmateAppChenTests.swift */; };
 		BF6030332AD6E56A003F86AC /* ClassmateAppChenUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6030322AD6E56A003F86AC /* ClassmateAppChenUITests.swift */; };
 		BF6030352AD6E56A003F86AC /* ClassmateAppChenUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6030342AD6E56A003F86AC /* ClassmateAppChenUITestsLaunchTests.swift */; };
+		BF790B0A2ADD850400629F3A /* ViewController4.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF790B092ADD850400629F3A /* ViewController4.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		BF60302E2AD6E56A003F86AC /* ClassmateAppChenUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClassmateAppChenUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF6030322AD6E56A003F86AC /* ClassmateAppChenUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassmateAppChenUITests.swift; sourceTree = "<group>"; };
 		BF6030342AD6E56A003F86AC /* ClassmateAppChenUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassmateAppChenUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		BF790B092ADD850400629F3A /* ViewController4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController4.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 		BF6030022AD6E568003F86AC = {
 			isa = PBXGroup;
 			children = (
+				BF790B092ADD850400629F3A /* ViewController4.swift */,
 				BF60300D2AD6E568003F86AC /* ClassmateAppChen */,
 				BF6030272AD6E56A003F86AC /* ClassmateAppChenTests */,
 				BF6030312AD6E56A003F86AC /* ClassmateAppChenUITests */,
@@ -268,6 +271,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF5D65D62AD83C0800723498 /* ViewController3.swift in Sources */,
+				BF790B0A2ADD850400629F3A /* ViewController4.swift in Sources */,
 				BF5D65D82AD83C5400723498 /* Student.swift in Sources */,
 				BF6030132AD6E568003F86AC /* ViewController.swift in Sources */,
 				BF6030192AD6E568003F86AC /* ClassmateAppChen.xcdatamodeld in Sources */,

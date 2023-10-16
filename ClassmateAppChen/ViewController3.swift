@@ -38,10 +38,11 @@ class ViewController3: UIViewController, UITextFieldDelegate {
         statusTextField.delegate = self
         super.viewDidLoad()
 
+        students.sort(by: { $0.firstName < $1.firstName })
         index = 0
         firstNameLabel.text = "First Name: \(students[index].firstName)"
         lastNameLabel.text = "Last Name : \(students[index].lastName)"
-        statusLabel.text = "Status/Situation: \(students[index].situation)"
+        statusLabel.text = "Status or Situation: \(students[index].situation)"
         switch students[index].rating{
         case .peak_mid:
             ratingLabel.text = "this student is peak mid"
@@ -56,7 +57,7 @@ class ViewController3: UIViewController, UITextFieldDelegate {
             ratingLabel.text = "this person is not a og"
             
         }
-        }
+    }
         
 
      
@@ -68,7 +69,7 @@ class ViewController3: UIViewController, UITextFieldDelegate {
         }
         firstNameLabel.text = "First Name: \(students[index].firstName)"
         lastNameLabel.text = "Last Name : \(students[index].lastName)"
-        statusLabel.text = "Status/Situation: \(students[index].situation)"
+        statusLabel.text = "Status or Situation: \(students[index].situation)"
         switch students[index].rating{
         case .peak_mid:
             ratingLabel.text = "this student is peak mid"
@@ -92,7 +93,7 @@ class ViewController3: UIViewController, UITextFieldDelegate {
         }
         firstNameLabel.text = "First Name: \(students[index].firstName)"
         lastNameLabel.text = "Last Name : \(students[index].lastName)"
-        statusLabel.text = "Status/Situation: \(students[index].situation)"
+        statusLabel.text = "Status or Situation: \(students[index].situation)"
         switch students[index].rating{
         case .peak_mid:
             ratingLabel.text = "this student is peak mid"
@@ -114,7 +115,7 @@ class ViewController3: UIViewController, UITextFieldDelegate {
         index = 0
         firstNameLabel.text = "First Name: \(students[index].firstName)"
         lastNameLabel.text = "Last Name : \(students[index].lastName)"
-        statusLabel.text = "Status/Situation: \(students[index].situation)"
+        statusLabel.text = "Status or Situation: \(students[index].situation)"
         switch students[index].rating{
         case .peak_mid:
             ratingLabel.text = "this student is peak mid"
@@ -140,6 +141,26 @@ class ViewController3: UIViewController, UITextFieldDelegate {
         firstTextfield.resignFirstResponder()
         lastTextField.resignFirstResponder()
         statusTextField.resignFirstResponder()
+        students.sort(by: { $0.firstName < $1.firstName })
+        index = 0
+        firstNameLabel.text = "First Name: \(students[index].firstName)"
+        lastNameLabel.text = "Last Name : \(students[index].lastName)"
+        statusLabel.text = "Status or Situation: \(students[index].situation)"
+        switch students[index].rating{
+        case .peak_mid:
+            ratingLabel.text = "this student is peak mid"
+            
+        case .mid:
+            ratingLabel.text = "this person is pretty mid"
+            
+        case.below_mid:
+            ratingLabel.text = "this person is below mid"
+            
+        default:
+            ratingLabel.text = "this person is not a og"
+            
+        }
+    }
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
