@@ -161,18 +161,19 @@ class ViewController3: UIViewController, UITextFieldDelegate {
             
         }
     }
-    }
-    
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         firstTextfield.resignFirstResponder()
         lastTextField.resignFirstResponder()
         statusTextField.resignFirstResponder()
         return true
     }
+    }
+    
+
     
     //
-    
+
     
     
 
-}
+
