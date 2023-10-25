@@ -58,7 +58,11 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
+    
+    @IBAction func tableAction(_ sender: UIButton) {
+        performSegue(withIdentifier: "segue2", sender: self)
+    }
+    
     @IBAction func classmateButton(_ sender: UIButton) {
         
         performSegue(withIdentifier: "segue", sender: self)
@@ -67,9 +71,16 @@ class ViewController: UIViewController {
     
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let nvc = segue.destination as! ViewController3
-        nvc.students = students2
-        nvc.delegate = self
+        if(segue.identifier == "segue"){
+            let nvc = segue.destination as! ViewController3
+            nvc.students = students2
+            nvc.delegate = self
+        }
+        if(segue.identifier == "segue2"){
+            let nvc = segue.destination as! ViewController4
+            nvc.delegate = self
+            nvc.students3 = students2
+        }
     }
     
 }

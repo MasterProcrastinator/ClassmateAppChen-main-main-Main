@@ -39,7 +39,7 @@ class ViewController3: UIViewController, UITextFieldDelegate {
         super.viewDidLoad()
 
         students.sort(by: { $0.firstName < $1.firstName })
-        index = 0
+
         firstNameLabel.text = "First Name: \(students[index].firstName)"
         lastNameLabel.text = "Last Name : \(students[index].lastName)"
         statusLabel.text = "Status or Situation: \(students[index].situation)"
@@ -135,32 +135,14 @@ class ViewController3: UIViewController, UITextFieldDelegate {
     
     @IBAction func addAction(_ sender: UIButton) {
         var s1 = Student(firstName: firstTextfield.text!, lastName: lastTextField.text!, rating: .not_og, situation: statusTextField.text!)
-        
         students.append(s1)
         delegate.students2 = students
         firstTextfield.resignFirstResponder()
         lastTextField.resignFirstResponder()
         statusTextField.resignFirstResponder()
-        students.sort(by: { $0.firstName < $1.firstName })
-        index = 0
-        firstNameLabel.text = "First Name: \(students[index].firstName)"
-        lastNameLabel.text = "Last Name : \(students[index].lastName)"
-        statusLabel.text = "Status or Situation: \(students[index].situation)"
-        switch students[index].rating{
-        case .peak_mid:
-            ratingLabel.text = "this student is peak mid"
-            
-        case .mid:
-            ratingLabel.text = "this person is pretty mid"
-            
-        case.below_mid:
-            ratingLabel.text = "this person is below mid"
-            
-        default:
-            ratingLabel.text = "this person is not a og"
-            
+   
+        
         }
-    }
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         firstTextfield.resignFirstResponder()
         lastTextField.resignFirstResponder()
@@ -168,6 +150,8 @@ class ViewController3: UIViewController, UITextFieldDelegate {
         return true
     }
     }
+    
+
     
 
     

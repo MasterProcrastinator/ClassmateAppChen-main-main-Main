@@ -7,23 +7,34 @@
 
 import UIKit
 
-class ViewController4: UIViewController {
+class ViewController4: UIViewController, UITextFieldDelegate, UITableViewDataSource{
 
+    
+
+    var delegate: ViewController!
+    var students3 : [Student] = []
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        
+        
+    }
+ 
+    
+    
+    
+    
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return students3.count
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "myCell")!
+        print("k")
+        return cell
     }
-    */
-
+    
+    
 }
+
